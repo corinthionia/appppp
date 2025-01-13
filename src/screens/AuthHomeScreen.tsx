@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, SafeAreaView, View } from 'react-native';
 import { StackScreenProps } from '@react-navigation/stack';
-import { AuthStackParamList } from '../navigation/AuthStackNavigator';
+import { AuthStackParamList } from '../navigations/stack/AuthStackNavigator';
 import { AUTH_NAVIGATIONS } from '../constants';
 
 type AuthHomeScreenProps = StackScreenProps<AuthStackParamList, typeof AUTH_NAVIGATIONS.AUTH_HOME>;
