@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import { AUTH_NAVIGATIONS } from '~/constants';
+import { AUTH_NAVIGATIONS, COLORS } from '~/constants';
 import { AuthHomeScreen, SignUpScreen, LoginScreen } from '~/screens';
 import { AuthStackParamList } from '~/types';
 
@@ -10,8 +10,8 @@ export default function AuthStackNavigator() {
   return (
     <Stack.Navigator
       screenOptions={{
-        cardStyle: { backgroundColor: 'white' },
-        headerStyle: { backgroundColor: 'white', shadowColor: 'gray' },
+        cardStyle: { backgroundColor: COLORS.white },
+        headerStyle: { backgroundColor: COLORS.white, shadowColor: 'gray' },
         headerTitleStyle: { fontSize: 15 },
         headerTintColor: 'black',
       }}
